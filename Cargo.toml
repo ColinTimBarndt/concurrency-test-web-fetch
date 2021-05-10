@@ -1,0 +1,12 @@
+[package]
+name = "concurrency-test-web-fetch"
+version = "0.1.0"
+authors = ["ColinTimBarndt <colin.barndt@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tokio = { version="1.5", features=["full", "rt-multi-thread"] }
+reqwest = { version="0.11", features=["json"] }
+futures = "0.3"
